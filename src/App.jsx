@@ -1,10 +1,12 @@
-// App.js
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "./Components/Navbar";
 import Menu from "./Menu";
 import Categories from "./Categories";
 import Title from "./Title";
 import items from "./data";
+import Contact from "./pages/Contact";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 function App() {
@@ -22,12 +24,30 @@ function App() {
 
   return (
     <main>
-      <Navbar />
-      <section className="menu">
-        <Title text="our menu" />
-        <Categories categories={categories} filterItems={filterItems} />
-        <Menu items={menuItems} />
-      </section>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <section className="menu">
+                <Title text="La Michoakna Menu" />
+                <Categories categories={categories} filterItems={filterItems} />
+                <Menu items={menuItems} />
+              </section>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <section className="menu">
+                <Title text="Hours" />
+                <Contact />
+              </section>
+            }
+          />
+        </Routes>
+      </Router>
     </main>
   );
 }

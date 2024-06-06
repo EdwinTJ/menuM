@@ -1,0 +1,44 @@
+.contact-page {
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: var(--primary-500);
+  margin-bottom: 1.5rem;
+}
+
+.hours {
+  margin-bottom: 2rem;
+}
+
+.hours p {
+  font-size: 1.25rem;
+  color: var(--grey-700);
+  margin: 0.5rem 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  fill: var(--primary-500);
+}
+
+.contact-item p {
+  font-size: 1.25rem;
+  color: var(--grey-700);
+  margin: 0;
+}
