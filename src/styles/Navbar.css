@@ -3,15 +3,15 @@
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Adjusted to space-between */
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   max-width: var(--max-width);
   width: 100%;
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
 }
 
 .navbar-logo {
@@ -24,7 +24,7 @@
   font-size: 1.5rem;
   color: var(--white);
   text-transform: uppercase;
-  margin-right: auto;
+  margin: 0 auto; /* Center the title horizontally */
 }
 
 .navbar-links {
@@ -42,4 +42,26 @@
 .navbar-links a:hover {
   background-color: var(--primary-700);
   border-radius: var(--borderRadius);
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .navbar-title {
+    margin-bottom: 1rem; /* Adds space between title and links */
+    text-align: center; /* Center the title text on mobile */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links a {
+    width: 100%; /* Make links full width on mobile */
+    text-align: center;
+  }
 }
