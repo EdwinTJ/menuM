@@ -1,0 +1,33 @@
+/* Pagination Styles */
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.pagination-button {
+  background: var(--grey-200);
+  border: none;
+  color: var(--grey-900);
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: var(--small-text);
+}
+
+.pagination-button:hover {
+  background: var(--grey-300);
+}
+
+.pagination-button.active {
+  background: var(--primary-500);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.pagination-button:focus {
+  outline: none;
+}

@@ -1,0 +1,32 @@
+.footer {
+  background-color: var(--primary-500);
+  color: var(--white);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-size: var(--small-text);
+}
