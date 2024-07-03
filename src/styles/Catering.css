@@ -1,0 +1,28 @@
+/* Catering Styles */
+
+.catering-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.catering-description {
+  font-size: 1.5rem;
+  text-align: center;
+
+  color: var(--grey-700);
+}
+
+.catering-services {
+  font-size: 1.5rem;
+  color: var(--grey-700);
+}
+
+.catering-services p {
+  margin: 0.5rem 0;
+}
