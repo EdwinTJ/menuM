@@ -6,6 +6,8 @@ import Title from "./Title";
 import items from "./data";
 import Contact from "./pages/Contact";
 import Catering from "./pages/Catering";
+import Footer from "./Components/Footer";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
@@ -57,6 +59,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </Router>
     </main>
   );
