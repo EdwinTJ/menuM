@@ -6,13 +6,13 @@ const Contact = () => {
     <main className="contact-page">
       {/* <h1 className="contact-title">Hours</h1> */}
       <div className="hours">
-        <p>Monday: 9 AM - 9 PM</p>
-        <p>Tuesday: 9 AM - 9 PM</p>
-        <p>Wednesday: 9 AM - 9 PM</p>
-        <p>Thursday: 9 AM - 9 PM</p>
-        <p>Friday: 9 AM - 10 PM</p>
-        <p>Saturday: 9 AM - 10 PM</p>
-        <p>Sunday: 10 AM - 8 PM</p>
+        <p>Monday: Closed</p>
+        <p>Tuesday: 3 PM - 10 PM</p>
+        <p>Wednesday: 3 PM - 10 PM</p>
+        <p>Thursday: 3 PM - 10 PM</p>
+        <p>Friday: 3 PM - 11 PM</p>
+        <p>Saturday: 3 PM - 11 PM</p>
+        <p>Sunday: 3 PM - 11 PM</p>
       </div>
       <div className="contact-info">
         <div className="contact-item">
