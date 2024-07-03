@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import MenuItem from "./MenuItem";
-import Pagination from "./Components/Pagination";
+import Pagination from "./Components/pagination";
 const Menu = ({ items }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
