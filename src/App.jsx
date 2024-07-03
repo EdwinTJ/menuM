@@ -7,7 +7,6 @@ import items from "./data";
 import Contact from "./pages/Contact";
 import Catering from "./pages/Catering";
 import Footer from "./Components/Footer";
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
@@ -26,42 +25,47 @@ function App() {
   };
 
   return (
-    <main>
+    <div id="root">
       <Router>
         <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <section className="menu">
-                <Title text="La Michoakna Menu" />
-                <Categories categories={categories} filterItems={filterItems} />
-                <Menu items={menuItems} />
-              </section>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <section className="menu">
-                <Title text="Hours" />
-                <Contact />
-              </section>
-            }
-          />
-          <Route
-            path="/catering"
-            element={
-              <section className="menu">
-                <Title text="Catering" />
-                <Catering />
-              </section>
-            }
-          />
-        </Routes>
+        <main>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <section className="menu">
+                  <Title text="La Michoakna Menu" />
+                  <Categories
+                    categories={categories}
+                    filterItems={filterItems}
+                  />
+                  <Menu items={menuItems} />
+                </section>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <section className="menu">
+                  <Title text="Hours" />
+                  <Contact />
+                </section>
+              }
+            />
+            <Route
+              path="/catering"
+              element={
+                <section className="menu">
+                  <Title text="Catering" />
+                  <Catering />
+                </section>
+              }
+            />
+          </Routes>
+        </main>
         <Footer />
       </Router>
-    </main>
+    </div>
   );
 }
 
